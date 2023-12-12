@@ -180,25 +180,20 @@ footer {
 }
 
 /* Carousel Styles */
-#galleryCarousel .carousel-item {
+#galleryCarousel {
     position: relative;
+    max-height: 500px; /* Maximum height of the carousel */
+}
+
+#galleryCarousel .carousel-item {
+    height: 500px; /* Carousel item height */
 }
 
 #galleryCarousel .carousel-item img {
-    width: 100%;
-    height: auto; /* Adjust the height automatically */
-    object-fit: contain; /* Ensure the full image fits inside the container */
-}
-
-/* Adjust the height of the carousel for mobile devices */
-@media (max-width: 768px) { /* Adjust the max-width as needed for your breakpoint */
-    #galleryCarousel {
-        max-height: none;
-    }
-
-    #galleryCarousel .carousel-item {
-        height: auto; /* Allow the item height to adjust to the image */
-    }
+    width: 100%; /* Image takes full width of the carousel */
+    max-height: 100%; /* Maximum height of the image */
+    object-fit: contain; /* The image will be scaled to maintain its aspect ratio */
+    object-position: center; /* Center the image within the element */
 }
 
 /* Allow images to shrink to a minimum of 50% of their height */
