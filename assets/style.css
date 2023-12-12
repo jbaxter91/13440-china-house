@@ -1,0 +1,78 @@
+/* Import Anton font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* Basic Reset */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Apply Font */
+body {
+    font-family: 'Anton', sans-serif;
+    color: #333; /* Default text color */
+    background-color: #FFFFFF; /* Background color */
+}
+
+/* Header Styles */
+header {
+    background-color: #EE3E38; /* Business Name color for header */
+    color: #FFFFFF; /* Foreground Elements color for text in header */
+}
+
+.navbar-logo {
+    max-height: 40px; /* Adjust this value as needed */
+}
+
+nav.navbar {
+    border-bottom: 2px solid #8D021F; /* Slogan color for border */
+}
+
+nav a.nav-link {
+    color: #FFFFFF; /* Foreground Elements color */
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: #EE3E38; /* Background Elements color */
+    color: #FFFFFF; /* Foreground Elements color */
+}
+
+/* Section Styling */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #EEEEEE; /* Light grey border for separation */
+}
+
+section h2 {
+    color: #EE3E38; /* Business Name color for headings */
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #8D021F; /* Slogan color for footer */
+    color: #FFFFFF; /* Foreground Elements color */
+    padding: 20px 0;
+}
+
+/* Additional Styles */
+.btn-primary {
+    background-color: #EE3E38; /* Button background color */
+    border-color: #EE3E38; /* Button border color */
+}
+
+.btn-primary:hover {
+    background-color: #D33C35; /* Slightly darker for hover effect */
+    border-color: #D33C35;
+}
+
+/* Utility Classes */
+.text-primary {
+    color: #EE3E38; /* Primary text color */
+}
+
+.bg-primary {
+    background-color: #EE3E38; /* Primary background color */
+}
