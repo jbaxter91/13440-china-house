@@ -76,3 +76,87 @@ footer {
 .bg-primary {
     background-color: #EE3E38; /* Primary background color */
 }
+
+/* Reviews Section Styles */
+#testimonials {
+    background-color: #f8f8f8; /* Light grey background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.review {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 3px solid #EE3E38; /* Accent color from your style guide */
+}
+
+.review-text {
+    font-style: italic;
+    position: relative;
+    font-size: larger;
+    padding: 0 20px;
+    color: #333; /* Dark text color */
+}
+
+.review-text::before,
+.review-text::after {
+    font-size: 30px; /* Large size for quotation marks */
+    color: #EE3E38; /* Accent color */
+    font-family: Arial, sans-serif; /* You can choose a different font if you like */
+}
+
+.review-text::before {
+    content: '“'; /* Opening quote */
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+.review-text::after {
+    content: '”'; /* Closing quote */
+    position: absolute;
+    right: 10px;
+    bottom: -10px;
+}
+
+.review-author {
+    color: #555; /* Slightly lighter text color for contrast */
+}
+
+/* Carousel Styles */
+#galleryCarousel {
+    position: relative;
+    max-height: 500px; /* Maximum height of the carousel */
+}
+
+#galleryCarousel .carousel-item {
+    height: 500px; /* Carousel item height */
+}
+
+#galleryCarousel .carousel-item img {
+    width: 100%; /* Image takes full width of the carousel */
+    max-height: 100%; /* Maximum height of the image */
+    object-fit: contain; /* The image will be scaled to maintain its aspect ratio */
+    object-position: center; /* Center the image within the element */
+}
+
+/* Allow images to shrink to a minimum of 50% of their height */
+#galleryCarousel .carousel-item img {
+    min-height: 250px; /* 50% of the carousel's max height */
+}
+
+/* Carousel Controls Styles */
+#galleryCarousel .carousel-control-prev,
+#galleryCarousel .carousel-control-next {
+    width: 5%; /* Control width, adjust as needed */
+}
+
+#galleryCarousel .carousel-control-prev-icon,
+#galleryCarousel .carousel-control-next-icon {
+    background-color: black; /* More visible color */
+    border-radius: 50%;
+    height: 40px; /* Size of the arrow */
+    width: 40px; /* Size of the arrow */
+    padding: 10px;
+}
