@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,134 +8,151 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
 
-<!-- Header -->
-<header class="p-4">
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#"><img src="./assets/images/logos/logo-white-transparent.png" alt="About Us" class="img-fluid navbar-logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <!-- Header -->
+    <header class="p-4">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="./assets/images/logos/logo-white-transparent.png" alt="About Us"
+                    class="img-fluid navbar-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Us Section -->
+    <section id="about" class="container mt-5">
+        <h2>About Us</h2>
+        <p>China House is an authentic Chinese restaurant located in the heart of Rome, New York. We offer a vast menu
+            rich with traditional Chinese cuisine,
+            ranging from daily special combinations such as General Tso's Chicken, Kung Pao Chicken, and Shrimp Egg Foo
+            Young, to a variety of appetizers, soups,
+            and dishes featuring fried rice, lo mein, chow mein, and more. Our signature dishes include the Pu Pu
+            Platter, Szechuan Shrimp, and our unique House Special Triple Delight.
+            We pride ourselves on providing a memorable dining experience with fresh, flavorful food that pays tribute
+            to the culinary traditions of China.
+            Whether you're looking for a family dinner, a quick takeout, or a catered event, China House in Rome, NY is
+            here to serve you!</p>
+
+        <!-- Add more content here -->
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container mt-5">
+        <h2>Our Menu</h2>
+        <!-- Add menu details here -->
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="container mt-5">
+        <h2>Gallery</h2>
+        <!-- Add gallery images here -->
+        <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#galleryCarousel" data-slide-to="1"></li>
+                <li data-target="#galleryCarousel" data-slide-to="2"></li>
+                <li data-target="#galleryCarousel" data-slide-to="3"></li>
+                <li data-target="#galleryCarousel" data-slide-to="4"></li>
+                <li data-target="#galleryCarousel" data-slide-to="5"></li>
+                <li data-target="#galleryCarousel" data-slide-to="6"></li>
+                <li data-target="#galleryCarousel" data-slide-to="7"></li>
+                <li data-target="#galleryCarousel" data-slide-to="8"></li>
+                <!-- Add more indicators if you have more images -->
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="./assets/images/gallery/china-house-exterior.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/images/gallery/china-house-interior.png"
+                        alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/images/gallery/china-house-glass.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/images/gallery/food-general.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/images/gallery/food-kungpow.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/images/gallery/food-orangechick.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/images/gallery/food-rangoon.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/images/gallery/food-sesime.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="./assets/images/gallery/food-wonton.jpg" alt="Third slide">
+                </div>
+                <!-- Add more items if you have more images -->
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-    </nav>
-</header>
+    </section>
 
-<!-- About Us Section -->
-<section id="about" class="container mt-5">
-    <h2>About Us</h2>
-    <p>China House is an authentic Chinese restaurant located in the heart of Rome, New York. We offer a vast menu rich with traditional Chinese cuisine, ranging from daily special combinations such as General Tso's Chicken, Kung Pao Chicken, and Shrimp Egg Foo Young, to a variety of appetizers, soups, and dishes featuring fried rice, lo mein, chow mein, and more. Our signature dishes include the Pu Pu Platter, Szechuan Shrimp, and our unique House Special Triple Delight. We pride ourselves on providing a memorable dining experience with fresh, flavorful food that pays tribute to the culinary traditions of China. Whether you're looking for a family dinner, a quick takeout, or a catered event, China House in Rome, NY is here to serve you!</p>
-    
-    <!-- Add more content here -->
-</section>
-
-<!-- Menu Section -->
-<section id="menu" class="container mt-5">
-    <h2>Our Menu</h2>
-    <!-- Add menu details here -->
-</section>
-
-<!-- Gallery Section -->
-<section id="gallery" class="container mt-5">
-    <h2>Gallery</h2>
-    <!-- Add gallery images here -->
-    <div id="galleryCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#galleryCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#galleryCarousel" data-slide-to="1"></li>
-            <li data-target="#galleryCarousel" data-slide-to="2"></li>
-            <li data-target="#galleryCarousel" data-slide-to="3"></li>
-            <li data-target="#galleryCarousel" data-slide-to="4"></li>
-            <li data-target="#galleryCarousel" data-slide-to="5"></li>
-            <li data-target="#galleryCarousel" data-slide-to="6"></li>
-            <li data-target="#galleryCarousel" data-slide-to="7"></li>
-            <li data-target="#galleryCarousel" data-slide-to="8"></li>
-            <!-- Add more indicators if you have more images -->
-        </ol>
-    
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="./assets/images/gallery/china-house-exterior.png" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/images/gallery/china-house-interior.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/images/gallery/china-house-glass.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/images/gallery/food-general.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/images/gallery/food-kungpow.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/images/gallery/food-orangechick.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/images/gallery/food-rangoon.png" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/images/gallery/food-sesime.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="./assets/images/gallery/food-wonton.jpg" alt="Third slide">
-            </div>
-            <!-- Add more items if you have more images -->
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container mt-5">
+        <h2>Customer Testimonials</h2>
+        <div class="review">
+            <p class="review-text">The very best Chinese food I ever had! Been going there for 35 years! Good clean
+                place to eat dinner.</p>
+            <p class="review-author">- Jeff N., Rome, NY</p>
         </div>
-    
-        <!-- Left and right controls -->
-        <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</section>
+        <div class="review">
+            <p class="review-text">China House is the best Chinese place ever... great service, great food, very good
+                nice scenery, and it's great.</p>
+            <p class="review-author">- Brandon S., NY, NY</p>
+        </div>
+        <div class="review">
+            <p class="review-text">Best Chinese food in the city... great service, great food, clean dine-in, 5 stars,
+                love this place.</p>
+            <p class="review-author">- Eric V., Holland Patent, NY</p>
+        </div>
+    </section>
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="container mt-5">
-    <h2>Customer Testimonials</h2>
-    <div class="review">
-        <p class="review-text">The very best Chinese food I ever had! Been going there for 35 years! Good clean place to eat dinner.</p>
-        <p class="review-author">- Jeff N., Rome, NY</p>
-    </div>
-    <div class="review">
-        <p class="review-text">China House is the best Chinese place ever... great service, great food, very good nice scenery, and it's great.</p>
-        <p class="review-author">- Brandon S., NY, NY</p>
-    </div>
-    <div class="review">
-        <p class="review-text">Best Chinese food in the city... great service, great food, clean dine-in, 5 stars, love this place.</p>
-        <p class="review-author">- Eric V., Holland Patent, NY</p>
-    </div>
-</section>
+    <!-- Contact and Location Section -->
+    <section id="contact" class="container mt-5">
+        <h2>Contact Us</h2>
+        <!-- Add contact form and location details here -->
+    </section>
 
-<!-- Contact and Location Section -->
-<section id="contact" class="container mt-5">
-    <h2>Contact Us</h2>
-    <!-- Add contact form and location details here -->
-</section>
+    <!-- Footer -->
+    <footer class="p-4 text-center">
+        Footer content goes here
+    </footer>
 
-<!-- Footer -->
-<footer class="p-4 text-center">
-    Footer content goes here
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="./assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
+
 </html>
